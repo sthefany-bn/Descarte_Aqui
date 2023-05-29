@@ -1,0 +1,75 @@
+:root{
+    --gray: #e2e2e2;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+/*MENU*/
+#menu {
+    height: 100%;
+    width: 0px;
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.abrir {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--black);
+    margin: 1rem;
+}
+
+.x {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--white);
+    text-decoration: none;
+    margin: -1rem auto;
+}
+
+#menu h1 {
+    font-size: 40px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+#menu section {
+    display: block;
+    justify-content: center;
+    padding: 30px;
+    transition: all 0.5s;
+}
+
+#menu > a  {
+    color: var(--white);
+    text-decoration: none;
+}
+
+#menu > a > section > h3 {
+    font-size: 25px;
+}
+
+#menu section:hover {
+    background-color: var(--gray);
+}
+
+
+#menu > a > section:hover {
+    color: var(--black);
+}
+
+#menu > section > a:hover {
+    color: var(--black);
+}
+
+.abrir:hover {
+    color: var(--black);
+}
